@@ -2,16 +2,13 @@
 
 ## Overview
 
-This project develops a Python-based ETF factor allocation framework. It analyzes four listed factor exposures (Value, Momentum, Quality and Low Volatility) and compares a dynamic allocation with three ETF-based alternatives: ITOT, LRGF and an equal-weight factor portfolio.
-
-ITOT is used as the broad U.S. equity market benchmark. LRGF is used as an investable multifactor ETF comparator. The equal-weight portfolio provides a simple static allocation across the four selected factor ETFs.
+This project develops a Python-based ETF factor allocation framework. It analyzes four listed factor exposures (Value, Momentum, Quality and Low Volatility) and compares a dynamic allocation with three ETF-based alternatives: ITOT, LRGF and an equal-weight factor portfolio. ITOT is used as the broad U.S. equity market benchmark. LRGF is used as an investable multifactor ETF comparator. The equal-weight portfolio provides a simple static allocation across the four selected factor ETFs.
 
 The central question is practical: can listed factor ETFs be monitored and allocated through a transparent, benchmark-relative process? The answer is assessed through explicit rules rather than discretionary market views.
 
 ## Project Motivation
 
 The project was designed to connect ETF-based asset management with applied portfolio analytics. ETFs are no longer only passive replication vehicles. They are also modular tools for portfolio construction, exposure management and reporting.
-
 Factor ETFs are especially relevant in this context. They make investment styles such as Value, Momentum, Quality and Low Volatility accessible through listed products. This project uses these ETFs to build a systematic allocation and reporting framework.
 
 The objective is not to create a predictive trading model. The goal is to show how ETF exposures can be compared, monitored and allocated in a clear and reproducible way.
@@ -29,9 +26,7 @@ The objective is not to create a predictive trading model. The goal is to show h
 
 ## Methodology
 
-The model uses daily adjusted ETF price data retrieved with `yfinance`. Daily returns are calculated from adjusted prices, which incorporate dividends and stock splits.
-
-Each factor ETF is evaluated relative to ITOT using a composite active score. The score combines four dimensions:
+The model uses daily adjusted ETF price data retrieved with `yfinance`. Daily returns are calculated from adjusted prices, which incorporate dividends and stock splits. Each factor ETF is evaluated relative to ITOT using a composite active score. The score combines four dimensions:
 
 - Information Ratio;
 - Sharpe advantage;
@@ -68,11 +63,7 @@ The notebook produces:
 
 ## Main Findings
 
-Over the comparable sample used in the report, the active allocation outperformed ITOT in annualized return and Sharpe ratio. The result is mainly return-driven rather than explained by a major reduction in volatility.
-
-The analysis also shows that factor leadership changes over time. This supports the idea that factor ETFs can be monitored through a benchmark-relative framework. However, the model remains reactive. It observes historical factor characteristics and does not predict future factor leadership.
-
-The value of the project lies in the clarity of the allocation process, the ETF implementation and the reporting framework. It should not be interpreted as evidence of persistent market-timing ability.
+Over the comparable sample used in the report, the active allocation outperformed ITOT in annualized return and Sharpe ratio. The result is mainly return-driven rather than explained by a major reduction in volatility. The analysis also shows that factor leadership changes over time. This supports the idea that factor ETFs can be monitored through a benchmark-relative framework. However, the model remains reactive. It observes historical factor characteristics and does not predict future factor leadership. The value of the project lies in the clarity of the allocation process, the ETF implementation and the reporting framework. It should not be interpreted as evidence of persistent market-timing ability.
 
 ## Limitations
 
