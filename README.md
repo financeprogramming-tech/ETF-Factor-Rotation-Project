@@ -99,7 +99,7 @@ ETF-Factor-Rotation-Project/
 ├── .gitignore
 │
 └── report/
-    └── ETF_Factor_Rotation_Project_Report_Elias_Banon.pdf
+    └── Elias_Banon_ETF_Factor_Rotation_Project_Report.pdf
 ```
 
 ## How to Run
