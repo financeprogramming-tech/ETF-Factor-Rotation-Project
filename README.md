@@ -100,6 +100,8 @@ ETF-Factor-Rotation-Project/
 │
 └── report/
     └── Elias_Banon_ETF_Factor_Rotation_Project_Report.pdf
+└── outputs/
+    └── ETF_Factor_Rotation_Monthly_Factsheet.pdf
 ```
 
 ## How to Run
